@@ -17,6 +17,7 @@ class CreateClientsTable extends Migration
             $table->increments('id');
             $table->string('names');
             $table->string('contact');
+            $table->string('secret_key');
             $table->string('email')->unique();
             $table->string('password');
             $table->rememberToken();
